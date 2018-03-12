@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import moment from 'moment';
 import '../styles/App.css';
+import Clock from 'react-live-clock';
 import EarthquakeList from './EarthquakeList'
 import EarthquakeInfo from './EarthquakeInfo'
 
+
 class App extends Component {
+
 
   constructor (props) {
     super(props)
@@ -33,9 +35,9 @@ class App extends Component {
           this.setState({
             earthquakes: json
           })
-          console.log('updated!')
+          console.log('updated with entire dataset!', json)
         })
-      }, 8000)
+      }, 20000)
     }
     //must clear old data out after refresh
     componentWillUnmount () {
@@ -49,8 +51,9 @@ class App extends Component {
             Whats shaking? Earthquake!
           </div>
           <EarthquakeInfo earthquakes={this.state.earthquakes} />
-          <EarthquakeList earthquakes={this.state.earthquakes} />
+                      <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} className='time' />
         </div>
+        <EarthquakeList earthquakes={this.state.earthquakes} />
       </div>
     )
   }
