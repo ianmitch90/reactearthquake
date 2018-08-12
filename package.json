@@ -1,5 +1,6 @@
 {
   "name": "simplereact-app",
+  "homepage": "https://ianmitch90.github.io/reactearthquake/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
