@@ -1,93 +1,89 @@
 .App {
   font-family: 'Dosis', sans-serif;
 }
-.time{
+
+.time {
   display: flex;
   justify-content: center;
   color: white;
   font-size: 3em;
 }
 
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  pointer-events: none;
-}
-.quake-list{
+.quake-list {
   display: flex;
-justify-content: center;
-align-items: center;
-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./mountianside.jpg'), linear-gradient(to right, #0093E9 0%, #80D0C7 100%);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.title {
 
-  padding-top: 20px;
-  background-color: black;
+.title {
+  padding: 4em;
+  background-image: url('./mountianlake.jpg'),
+  linear-gradient(to top, #F4D03F 0%, #16A085 100%);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   vertical-align: center;
 }
+
 .supertitle {
   font-size: 2em;
-
   padding-top: 20px;
-  background-color: black;
   vertical-align: center;
   color: white;
   text-align: center;
 }
 
+.cardigan {
+  text-align: center;
+  width: 75%;
+  margin: 2em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.earthquake-title {
+  color: white;
+  text-align: center;
+}
 
 .my-header {
   font-family: 'Pacifico', cursive;
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   color: orange;
   text-shadow: 2px 2px 5px grey;
   animation: shake infinite .5s linear;
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(4px, 0, 0);
   }
-
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(10px, 0, 0);
   }
-}
-
-.quake-list {
-  padding-top: 30px;
-}
-
-.card {
-  padding: 10px;
-  margin: 10px;
-}
-
-.earthquake-title {
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  font-size: 30px;
-  text-align: center;
-  height: 200px;
-  background-image: url('http://www.sanandreasfault.org/4020_A.jpg');
-  background-position: center;
 }

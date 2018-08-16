@@ -46,12 +46,13 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
+
         <div className='title'>
           <div className='my-header'>
-            Whats shaking? Earthquake!
+            <h1>Whats shaking? Earthquake!</h1>
           </div>
           <EarthquakeInfo earthquakes={this.state.earthquakes} />
-                      <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} className='time' />
+          <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} className='time' />
         </div>
         <EarthquakeList earthquakes={this.state.earthquakes} />
       </div>
