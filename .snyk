@@ -31,3 +31,7 @@ patch:
   'npm:lodash:20180130':
     - npm > cli-table2 > lodash:
         patched: '2019-01-02T07:41:58.910Z'
+    - npm > cli-table2 > lodash:
+        patched: '2019-01-02T07:47:05.676Z'
+    - npm > npm-audit-report > cli-table2 > lodash:
+        patched: '2019-01-02T07:47:05.676Z'
