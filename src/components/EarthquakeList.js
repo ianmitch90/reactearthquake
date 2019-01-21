@@ -27,3 +27,15 @@ class EarthquakeList extends Component {
   }
 }
 export default EarthquakeList
+
+import React from 'react'
+
+function EarthquakeList() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default EarthquakeList
