@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.3
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -31,3 +31,16 @@ patch:
   'npm:lodash:20180130':
     - npm > cli-table2 > lodash:
         patched: '2019-01-02T07:41:58.910Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
+    - npm > npm-profile > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
+    - npm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
+    - npm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
+    - npm > libcipm > pacote > make-fetch-happen > https-proxy-agent:
+        patched: '2019-10-04T08:49:03.553Z'
